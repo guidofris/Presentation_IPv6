@@ -21,9 +21,9 @@ export const ipv6SecurityClosingSlides: SlideType[] = [
         <div className="bg-white p-4 rounded-lg shadow border border-orange-200">
           <h4 className="font-semibold text-orange-900 mb-2">Voorbeeldregels (concept)</h4>
           <div className="bg-gray-900 text-gray-100 rounded-lg p-3 text-xs font-mono overflow-x-auto space-y-1">
-            <p>table inet filter {{ ... }}</p>
-            <p>ip6 nexthdr icmpv6 icmpv6 type {{ nd-neighbor-solicit, nd-neighbor-advert, router-solicit, router-advert }} accept</p>
-            <p>tcp dport {{ 22, 80, 443 }} accept</p>
+            <p>table inet filter {'{'} ... {'}'}</p>
+            <p>ip6 nexthdr icmpv6 icmpv6 type {'{'} nd-neighbor-solicit, nd-neighbor-advert, router-solicit, router-advert {'}'} accept</p>
+            <p>tcp dport {'{'} 22, 80, 443 {'}'} accept</p>
             <p>ct state established,related accept</p>
           </div>
         </div>
