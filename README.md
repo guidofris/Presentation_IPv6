@@ -1,32 +1,17 @@
-# AI Native Software Engineering Workshop
+# IPv6 Workshop Presentation
 
-An interactive slideshow for the **AI Native Developer Workshop**, built with React and TypeScript. Covers a full curriculum from AI fundamentals to hands-on tool demos.
+An interactive slideshow focused on IPv6 configuration, operations, and validation.
 
-## Slides
+Built with React, TypeScript, and Tailwind CSS for GitHub Pages deployment.
 
-| Section           | Topics                                             |
-| ----------------- | -------------------------------------------------- |
-| Introduction      | Workshop overview, the AI-native developer mindset |
-| Evolution         | How software development is changing with AI       |
-| LLM Basics        | Transformers, context windows, GPU acceleration    |
-| 4D Fluency        | Framework for effective AI collaboration           |
-| Models            | Model landscape and selection guidance             |
-| Ollama            | Running models locally                             |
-| Prompting         | Prompt engineering techniques                      |
-| Copilot           | GitHub Copilot features and usage                  |
-| Privacy           | Data handling and enterprise privacy controls      |
-| Security          | OWASP Top 10, secure AI-assisted coding            |
-| Instructions      | Custom instructions and system prompts             |
-| Context           | Context window management strategies               |
-| Spec Kit          | Spec-driven development with AI                    |
-| Reuse & Skills    | Prompt libraries, reuse patterns                   |
-| MCP               | Model Context Protocol                             |
-| Team Sharing      | Copilot for organizational knowledge sharing       |
-| Copilot CLI       | Terminal-based AI assistance                       |
-| Multi-Agent       | Agentic workflows and orchestration                |
-| Copilot SDK       | Building custom Copilot extensions                 |
-| What the Pros Use | Tools and practices from experienced AI developers |
-| Closing           | Summary and next steps                             |
+## Slide Index
+
+| Section               | Topics                                                        |
+| --------------------- | ------------------------------------------------------------- |
+| Intro                 | Scope, goals, and operational outcomes                        |
+| Adressering           | Prefix planning, static IPv6, SLAAC vs DHCPv6                |
+| Routing en Services   | Route validation, DNS AAAA/PTR, and IPv6 service tests       |
+| Security en Afsluiting| nftables baseline, verification checklist, and next steps    |
 
 ## Tech Stack
 
@@ -50,7 +35,7 @@ npm install
 npm run dev
 ```
 
-Open `http://localhost:5173` in your browser. The app is password-protected; the default local dev password is `workshop`.
+Open `http://localhost:5173` in your browser. The app is password-protected; the default local dev password is `LinuxIsCool`.
 
 ### Build
 
