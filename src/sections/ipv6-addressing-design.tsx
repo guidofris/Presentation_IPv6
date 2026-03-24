@@ -56,81 +56,93 @@ export const ipv6AddressingDesignSlides: SlideType[] = [
     title: 'How Do IPv4 and IPv6 Compare?',
     subtitle: 'The scale difference changes everything about network design',
     content: (
-      <div className="flex flex-col space-y-3 max-w-3xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-[1.15fr_0.85fr] gap-3 items-stretch">
-          <div className="bg-gradient-to-br from-sky-50 via-white to-red-50 p-3 rounded-lg border border-gray-200 overflow-hidden">
-            <svg viewBox="0 0 720 360" className="w-full h-48 md:h-56" role="img" aria-label="A giant IPv6 person looking down at an angry IPv4 dwarf to illustrate address space scale">
-              <rect x="0" y="0" width="720" height="360" fill="#f8fafc" />
-              <ellipse cx="360" cy="320" rx="290" ry="28" fill="#dbe4ea" />
+      <div className="flex flex-col space-y-2 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-[1.2fr_0.8fr] gap-3 items-start">
+          <div className="bg-gradient-to-br from-slate-50 via-sky-50 to-rose-50 p-3 rounded-lg border border-slate-200 shadow-sm">
+            <svg viewBox="0 0 760 320" className="w-full h-40 md:h-44" role="img" aria-label="Professional cartoon showing a giant IPv6 figure looking down at an angry IPv4 dwarf">
+              <defs>
+                <linearGradient id="ipv6Body" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0%" stopColor="#60a5fa" />
+                  <stop offset="100%" stopColor="#2563eb" />
+                </linearGradient>
+                <linearGradient id="ipv4Body" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0%" stopColor="#fb7185" />
+                  <stop offset="100%" stopColor="#dc2626" />
+                </linearGradient>
+              </defs>
 
-              <g transform="translate(390 28)">
-                <circle cx="120" cy="54" r="38" fill="#93c5fd" stroke="#2563eb" strokeWidth="4" />
-                <rect x="85" y="96" width="70" height="118" rx="26" fill="#60a5fa" stroke="#2563eb" strokeWidth="4" />
-                <line x1="86" y1="124" x2="36" y2="162" stroke="#2563eb" strokeWidth="12" strokeLinecap="round" />
-                <line x1="154" y1="124" x2="204" y2="112" stroke="#2563eb" strokeWidth="12" strokeLinecap="round" />
-                <line x1="104" y1="214" x2="84" y2="292" stroke="#2563eb" strokeWidth="13" strokeLinecap="round" />
-                <line x1="136" y1="214" x2="154" y2="292" stroke="#2563eb" strokeWidth="13" strokeLinecap="round" />
-                <circle cx="108" cy="48" r="4" fill="#0f172a" />
-                <circle cx="132" cy="48" r="4" fill="#0f172a" />
-                <path d="M106 67 Q120 79 134 67" fill="none" stroke="#0f172a" strokeWidth="4" strokeLinecap="round" />
-                <text x="120" y="258" textAnchor="middle" fontSize="28" fontWeight="700" fill="#1d4ed8">IPv6</text>
-                <text x="120" y="288" textAnchor="middle" fontSize="21" fontWeight="700" fill="#1e3a8a">128-bit giant</text>
+              <rect x="0" y="0" width="760" height="320" rx="20" fill="#f8fafc" />
+              <ellipse cx="385" cy="286" rx="270" ry="20" fill="#d9e3ea" />
+
+              <g transform="translate(420 36)">
+                <ellipse cx="92" cy="42" rx="34" ry="36" fill="#dbeafe" stroke="#1d4ed8" strokeWidth="4" />
+                <path d="M62 96 C68 74, 118 74, 124 96 L135 176 C136 190, 126 202, 112 202 L74 202 C60 202, 50 190, 51 176 Z" fill="url(#ipv6Body)" stroke="#1d4ed8" strokeWidth="4" />
+                <path d="M63 108 C42 120, 30 132, 18 154" fill="none" stroke="#1d4ed8" strokeWidth="11" strokeLinecap="round" />
+                <path d="M121 108 C147 102, 168 102, 188 112" fill="none" stroke="#1d4ed8" strokeWidth="11" strokeLinecap="round" />
+                <path d="M80 202 C70 228, 60 250, 58 276" fill="none" stroke="#1d4ed8" strokeWidth="12" strokeLinecap="round" />
+                <path d="M106 202 C118 226, 129 248, 135 276" fill="none" stroke="#1d4ed8" strokeWidth="12" strokeLinecap="round" />
+                <circle cx="80" cy="40" r="4" fill="#0f172a" />
+                <circle cx="104" cy="40" r="4" fill="#0f172a" />
+                <path d="M80 61 Q92 70 104 61" fill="none" stroke="#0f172a" strokeWidth="4" strokeLinecap="round" />
+                <path d="M59 26 Q92 4 125 26" fill="none" stroke="#1e3a8a" strokeWidth="4" strokeLinecap="round" />
               </g>
 
-              <g transform="translate(120 168)">
-                <circle cx="60" cy="34" r="24" fill="#fca5a5" stroke="#dc2626" strokeWidth="4" />
-                <rect x="40" y="60" width="40" height="62" rx="16" fill="#f87171" stroke="#dc2626" strokeWidth="4" />
-                <line x1="40" y1="82" x2="12" y2="92" stroke="#dc2626" strokeWidth="9" strokeLinecap="round" />
-                <line x1="80" y1="82" x2="108" y2="90" stroke="#dc2626" strokeWidth="9" strokeLinecap="round" />
-                <line x1="50" y1="122" x2="38" y2="164" stroke="#dc2626" strokeWidth="10" strokeLinecap="round" />
-                <line x1="70" y1="122" x2="82" y2="164" stroke="#dc2626" strokeWidth="10" strokeLinecap="round" />
-                <line x1="48" y1="30" x2="56" y2="26" stroke="#0f172a" strokeWidth="3" strokeLinecap="round" />
-                <line x1="72" y1="26" x2="80" y2="30" stroke="#0f172a" strokeWidth="3" strokeLinecap="round" />
-                <circle cx="52" cy="34" r="3" fill="#0f172a" />
-                <circle cx="68" cy="34" r="3" fill="#0f172a" />
-                <path d="M48 49 Q60 40 72 49" fill="none" stroke="#0f172a" strokeWidth="3" strokeLinecap="round" />
-                <text x="60" y="188" textAnchor="middle" fontSize="20" fontWeight="700" fill="#b91c1c">IPv4</text>
-                <text x="60" y="212" textAnchor="middle" fontSize="15" fontWeight="700" fill="#7f1d1d">32-bit dwarf</text>
+              <g transform="translate(132 170)">
+                <ellipse cx="52" cy="26" rx="22" ry="23" fill="#fecdd3" stroke="#b91c1c" strokeWidth="4" />
+                <path d="M34 59 C38 45, 66 45, 70 59 L77 104 C78 114, 72 122, 63 122 L41 122 C32 122, 26 114, 27 104 Z" fill="url(#ipv4Body)" stroke="#b91c1c" strokeWidth="4" />
+                <path d="M35 68 C20 74, 12 79, 0 86" fill="none" stroke="#b91c1c" strokeWidth="8" strokeLinecap="round" />
+                <path d="M69 68 C83 70, 95 75, 106 84" fill="none" stroke="#b91c1c" strokeWidth="8" strokeLinecap="round" />
+                <path d="M43 122 C38 139, 34 152, 34 168" fill="none" stroke="#b91c1c" strokeWidth="8" strokeLinecap="round" />
+                <path d="M61 122 C65 139, 70 152, 74 168" fill="none" stroke="#b91c1c" strokeWidth="8" strokeLinecap="round" />
+                <circle cx="45" cy="25" r="3" fill="#0f172a" />
+                <circle cx="60" cy="25" r="3" fill="#0f172a" />
+                <path d="M40 40 Q52 30 64 40" fill="none" stroke="#0f172a" strokeWidth="3" strokeLinecap="round" />
+                <path d="M31 14 L41 10" stroke="#0f172a" strokeWidth="3" strokeLinecap="round" />
+                <path d="M63 10 L73 14" stroke="#0f172a" strokeWidth="3" strokeLinecap="round" />
               </g>
 
-              <line x1="420" y1="140" x2="240" y2="205" stroke="#475569" strokeWidth="5" strokeDasharray="8 8" />
-              <text x="308" y="134" textAnchor="middle" fontSize="18" fontWeight="700" fill="#334155">looks down on</text>
+              <path d="M438 122 C390 142, 326 156, 248 186" fill="none" stroke="#64748b" strokeWidth="4" strokeDasharray="8 8" />
+              <text x="340" y="120" textAnchor="middle" fontSize="16" fontWeight="700" fill="#475569">vastly larger address space</text>
+
+              <g>
+                <rect x="466" y="244" width="92" height="30" rx="15" fill="#dbeafe" stroke="#93c5fd" />
+                <text x="512" y="264" textAnchor="middle" fontSize="18" fontWeight="700" fill="#1d4ed8">IPv6</text>
+                <rect x="135" y="244" width="82" height="28" rx="14" fill="#fee2e2" stroke="#fca5a5" />
+                <text x="176" y="263" textAnchor="middle" fontSize="17" fontWeight="700" fill="#b91c1c">IPv4</text>
+              </g>
             </svg>
-
-            <div className="grid grid-cols-2 gap-2 mt-2">
-              <div className="bg-red-50 border border-red-200 rounded p-2 text-center">
-                <div className="text-xl font-bold text-red-700">$2^{32}$</div>
-                <div className="text-[11px] text-red-900">~4.3 billion IPv4 addresses</div>
-              </div>
-              <div className="bg-green-50 border border-green-200 rounded p-2 text-center">
-                <div className="text-xl font-bold text-green-700">$2^{128}$</div>
-                <div className="text-[11px] text-green-900">340 undecillion IPv6 addresses</div>
-              </div>
-            </div>
           </div>
 
-          <div className="space-y-3">
-            <div className="bg-red-50 p-3 rounded-lg border border-red-200">
-              <h4 className="text-sm font-bold text-red-800 mb-2">IPv4</h4>
-              <ul className="space-y-1 text-xs text-gray-700">
-                <li>• 32-bit space, already exhausted</li>
-                <li>• NAT extends life but adds complexity</li>
-                <li>• Host counting per subnet matters</li>
-                <li>• Flexible prefixes, limited capacity</li>
+          <div className="space-y-2">
+            <div className="grid grid-cols-2 gap-2">
+              <div className="bg-red-50 border border-red-200 rounded-lg p-2 text-center">
+                <div className="text-lg font-bold text-red-700">32-bit</div>
+                <div className="text-[11px] text-red-900">~4.3 billion addresses</div>
+              </div>
+              <div className="bg-green-50 border border-green-200 rounded-lg p-2 text-center">
+                <div className="text-lg font-bold text-green-700">128-bit</div>
+                <div className="text-[11px] text-green-900">340 undecillion addresses</div>
+              </div>
+            </div>
+            <div className="bg-white p-3 rounded-lg shadow border border-red-200">
+              <h4 className="text-sm font-bold text-red-800 mb-1">IPv4</h4>
+              <ul className="space-y-0.5 text-xs text-gray-700">
+                <li>• Exhausted global pool</li>
+                <li>• NAT compensates for scarcity</li>
+                <li>• Address conservation dominates design</li>
               </ul>
             </div>
-            <div className="bg-green-50 p-3 rounded-lg border border-green-200">
-              <h4 className="text-sm font-bold text-green-800 mb-2">IPv6</h4>
-              <ul className="space-y-1 text-xs text-gray-700">
-                <li>• 128-bit space, effectively inexhaustible</li>
-                <li>• /64 at the edge, count subnets not hosts</li>
-                <li>• Nibble boundaries simplify hierarchy</li>
-                <li>• No NAT required for scale</li>
+            <div className="bg-white p-3 rounded-lg shadow border border-green-200">
+              <h4 className="text-sm font-bold text-green-800 mb-1">IPv6</h4>
+              <ul className="space-y-0.5 text-xs text-gray-700">
+                <li>• Vast address space</li>
+                <li>• Count subnets, not hosts</li>
+                <li>• Nibble boundaries keep plans readable</li>
               </ul>
             </div>
           </div>
         </div>
-        <div className="bg-green-50 p-2 rounded text-xs text-green-800 border border-green-200">
+        <div className="bg-green-50 p-2 rounded text-[11px] text-green-800 border border-green-200">
           Source: ARIN IPv6 Network Planning Guide — <span className="text-green-600">arin.net/reference/training/resources/ipv6_networkplan.pdf</span>
         </div>
       </div>
