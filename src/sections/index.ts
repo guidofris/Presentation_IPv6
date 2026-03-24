@@ -41,3 +41,7 @@ export { ipv6RoutingServicesSlides } from './ipv6-routing-services';
 export { ipv6SecurityClosingSlides } from './ipv6-security-closing';
 export { netacadPart1Slides } from './netacad-part1';
 export { netacadPart2Slides } from './netacad-part2';
+export { ipv6FactsBusinessSlides } from './ipv6-facts-business';
+export { ipv6AddressingDesignSlides } from './ipv6-addressing-design';
+export { ipv6OperationsNdpSlides } from './ipv6-operations-ndp';
+export { ipv6TransitionJourneySlides } from './ipv6-transition-journey';

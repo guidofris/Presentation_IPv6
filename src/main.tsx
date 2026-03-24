@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
-import { ChevronLeft, ChevronRight, Menu, X, Presentation, Box, PanelRight, PanelLeft } from 'lucide-react';
-import { netacadPart1Slides, netacadPart2Slides } from './sections';
+import { ChevronLeft, ChevronRight, Menu, X, Globe, Ruler, Router, Compass, PanelRight, PanelLeft } from 'lucide-react';
+import { ipv6FactsBusinessSlides, ipv6AddressingDesignSlides, ipv6OperationsNdpSlides, ipv6TransitionJourneySlides } from './sections';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { ProtectedRoute } from './components/ProtectedRoute';
 import './index.css';
@@ -18,8 +18,10 @@ const WORKSHOP_PASSWORD_HASH = import.meta.env.VITE_WORKSHOP_PASSWORD_HASH ||
 
 // Section definitions with metadata
 const sections = [
-  { name: 'IPv6 Today - Part 1', slides: netacadPart1Slides, color: 'blue', icon: Presentation },
-  { name: 'IPv6 Today - Part 2', slides: netacadPart2Slides, color: 'purple', icon: Box },
+  { name: 'IPv6 Reality Check', slides: ipv6FactsBusinessSlides, color: 'blue', icon: Globe },
+  { name: 'IPv6 Address Design', slides: ipv6AddressingDesignSlides, color: 'green', icon: Ruler },
+  { name: 'IPv6 Operations', slides: ipv6OperationsNdpSlides, color: 'purple', icon: Router },
+  { name: 'IPv6-Only Journey', slides: ipv6TransitionJourneySlides, color: 'orange', icon: Compass },
 ];
 
 // Calculate section start indices
@@ -56,8 +58,10 @@ const FourDSlides = () => {
 
   // Combine all slide sections
   const slides = [
-    ...netacadPart1Slides,
-    ...netacadPart2Slides,
+    ...ipv6FactsBusinessSlides,
+    ...ipv6AddressingDesignSlides,
+    ...ipv6OperationsNdpSlides,
+    ...ipv6TransitionJourneySlides,
   ];
 
   // Get current section based on slide index
