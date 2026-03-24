@@ -277,53 +277,34 @@ export const ipv6AddressingDesignSlides: SlideType[] = [
           Keep each boundary on a nibble (4-bit) step for clean aggregation and simpler troubleshooting.
         </div>
 
-        <div className="relative w-full h-56 bg-gray-200 rounded-full overflow-hidden border border-gray-300">
-          <div className="absolute inset-2 bg-cyan-500 rounded-full shadow-sm">
-            <div className="absolute top-2 left-1/2 -translate-x-1/2 text-xs md:text-sm font-bold text-gray-800 text-center leading-tight">
-              /29 Global Level
-              <br />
-              (50% spares)
-            </div>
-            <div className="absolute right-8 top-1/2 -translate-y-1/2 text-white text-xl md:text-3xl font-bold text-center leading-tight">
-              /32
-              <br />
-              <span className="text-base md:text-xl">per Region</span>
-            </div>
-          </div>
+        <div className="bg-gray-200 rounded-2xl p-2 border border-gray-300 shadow-sm">
+          <svg viewBox="0 0 1200 420" className="w-full h-52" role="img" aria-label="Nibble boundaries hierarchy from /29 to /52">
+            <ellipse cx="600" cy="210" rx="575" ry="185" fill="#1cb5e0" />
+            <ellipse cx="600" cy="210" rx="552" ry="148" fill="#1f66e5" />
+            <ellipse cx="555" cy="210" rx="465" ry="126" fill="#3f9d20" />
+            <ellipse cx="440" cy="210" rx="360" ry="96" fill="#e8d6bb" stroke="#f59e0b" strokeWidth="1.5" />
+            <ellipse cx="335" cy="210" rx="260" ry="70" fill="#f9bf00" stroke="#f59e0b" strokeWidth="2" />
+            <ellipse cx="190" cy="210" rx="110" ry="46" fill="#f7f7f7" stroke="#b9b9b9" strokeWidth="2" />
 
-          <div className="absolute inset-x-6 inset-y-8 bg-blue-600 rounded-full shadow-sm">
-            <div className="absolute right-52 top-1/2 -translate-y-1/2 text-gray-900 text-xl md:text-3xl font-bold text-center leading-tight">
-              /36
-              <br />
-              <span className="text-base md:text-xl">per Sub-Region</span>
-            </div>
-          </div>
+            <text x="600" y="72" textAnchor="middle" fontSize="24" fontWeight="700" fill="#1f2937">/29 Global Level</text>
+            <text x="600" y="101" textAnchor="middle" fontSize="24" fontWeight="700" fill="#1f2937">(50% spares)</text>
 
-          <div className="absolute inset-x-12 inset-y-14 bg-green-600 rounded-full shadow-sm"></div>
+            <text x="1080" y="205" textAnchor="middle" fontSize="52" fontWeight="700" fill="#ffffff">/32</text>
+            <text x="1080" y="242" textAnchor="middle" fontSize="28" fontWeight="700" fill="#ffffff">per Region</text>
 
-          <div className="absolute left-16 right-32 top-20 bottom-16 bg-amber-100 rounded-full border border-amber-300 shadow-sm">
-            <div className="absolute right-8 top-1/2 -translate-y-1/2 text-gray-700 text-lg md:text-2xl font-bold text-center leading-tight">
-              /40 per Campus
-              <br />
-              <span className="text-sm md:text-lg">(256 Buildings)</span>
-            </div>
-          </div>
+            <text x="840" y="205" textAnchor="middle" fontSize="52" fontWeight="700" fill="#1f2937">/36</text>
+            <text x="840" y="242" textAnchor="middle" fontSize="28" fontWeight="700" fill="#1f2937">per Sub-Region</text>
 
-          <div className="absolute left-24 right-80 top-24 bottom-20 bg-amber-400 rounded-full border border-amber-500 shadow-sm">
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-gray-900 text-lg md:text-2xl font-bold text-center leading-tight">
-              /48 per Building/Branch
-              <br />
-              <span className="text-sm md:text-lg">(16 PINs per Building/Branch)</span>
-            </div>
-          </div>
+            <text x="700" y="202" textAnchor="middle" fontSize="28" fontWeight="700" fill="#3f3f46">/40 per Campus</text>
+            <text x="700" y="232" textAnchor="middle" fontSize="22" fontWeight="700" fill="#3f3f46">(256 Buildings)</text>
 
-          <div className="absolute left-8 top-1/2 -translate-y-1/2 w-52 h-28 bg-white rounded-full border border-gray-300 shadow-md flex items-center justify-center px-2">
-            <p className="text-gray-900 text-sm md:text-xl font-bold text-center leading-tight">
-              /52 per PIN *
-              <br />
-              <span className="text-xs md:text-base">(4096 Subnets / PIN)</span>
-            </p>
-          </div>
+            <text x="438" y="196" textAnchor="middle" fontSize="28" fontWeight="700" fill="#111827">/48 per Building/Branch</text>
+            <text x="438" y="226" textAnchor="middle" fontSize="22" fontWeight="700" fill="#111827">(16 PINs per</text>
+            <text x="438" y="253" textAnchor="middle" fontSize="22" fontWeight="700" fill="#111827">Building/Branch)</text>
+
+            <text x="190" y="198" textAnchor="middle" fontSize="24" fontWeight="700" fill="#0f172a">/52 per PIN *</text>
+            <text x="190" y="227" textAnchor="middle" fontSize="19" fontWeight="700" fill="#0f172a">(4096 Subnets / PIN)</text>
+          </svg>
         </div>
 
         <p className="text-xs text-gray-500">* PIN = Place In the Network</p>
