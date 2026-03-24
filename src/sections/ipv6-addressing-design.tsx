@@ -57,26 +57,77 @@ export const ipv6AddressingDesignSlides: SlideType[] = [
     subtitle: 'The scale difference changes everything about network design',
     content: (
       <div className="flex flex-col space-y-3 max-w-3xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <div className="bg-red-50 p-3 rounded-lg border border-red-200">
-            <h4 className="text-sm font-bold text-red-800 mb-2">IPv4</h4>
-            <ul className="space-y-1 text-xs text-gray-700">
-              <li>• 32-bit addresses = ~4.3 billion total</li>
-              <li>• Already exhausted (IANA 2011, regional RIRs followed)</li>
-              <li>• Requires NAT to extend usable space</li>
-              <li>• CIDR allows flexible prefix lengths</li>
-              <li>• Host counting per subnet is essential</li>
-            </ul>
+        <div className="grid grid-cols-1 md:grid-cols-[1.15fr_0.85fr] gap-3 items-stretch">
+          <div className="bg-gradient-to-br from-sky-50 via-white to-red-50 p-3 rounded-lg border border-gray-200 overflow-hidden">
+            <svg viewBox="0 0 720 360" className="w-full h-48 md:h-56" role="img" aria-label="A giant IPv6 person looking down at an angry IPv4 dwarf to illustrate address space scale">
+              <rect x="0" y="0" width="720" height="360" fill="#f8fafc" />
+              <ellipse cx="360" cy="320" rx="290" ry="28" fill="#dbe4ea" />
+
+              <g transform="translate(390 28)">
+                <circle cx="120" cy="54" r="38" fill="#93c5fd" stroke="#2563eb" strokeWidth="4" />
+                <rect x="85" y="96" width="70" height="118" rx="26" fill="#60a5fa" stroke="#2563eb" strokeWidth="4" />
+                <line x1="86" y1="124" x2="36" y2="162" stroke="#2563eb" strokeWidth="12" strokeLinecap="round" />
+                <line x1="154" y1="124" x2="204" y2="112" stroke="#2563eb" strokeWidth="12" strokeLinecap="round" />
+                <line x1="104" y1="214" x2="84" y2="292" stroke="#2563eb" strokeWidth="13" strokeLinecap="round" />
+                <line x1="136" y1="214" x2="154" y2="292" stroke="#2563eb" strokeWidth="13" strokeLinecap="round" />
+                <circle cx="108" cy="48" r="4" fill="#0f172a" />
+                <circle cx="132" cy="48" r="4" fill="#0f172a" />
+                <path d="M106 67 Q120 79 134 67" fill="none" stroke="#0f172a" strokeWidth="4" strokeLinecap="round" />
+                <text x="120" y="258" textAnchor="middle" fontSize="28" fontWeight="700" fill="#1d4ed8">IPv6</text>
+                <text x="120" y="288" textAnchor="middle" fontSize="21" fontWeight="700" fill="#1e3a8a">128-bit giant</text>
+              </g>
+
+              <g transform="translate(120 168)">
+                <circle cx="60" cy="34" r="24" fill="#fca5a5" stroke="#dc2626" strokeWidth="4" />
+                <rect x="40" y="60" width="40" height="62" rx="16" fill="#f87171" stroke="#dc2626" strokeWidth="4" />
+                <line x1="40" y1="82" x2="12" y2="92" stroke="#dc2626" strokeWidth="9" strokeLinecap="round" />
+                <line x1="80" y1="82" x2="108" y2="90" stroke="#dc2626" strokeWidth="9" strokeLinecap="round" />
+                <line x1="50" y1="122" x2="38" y2="164" stroke="#dc2626" strokeWidth="10" strokeLinecap="round" />
+                <line x1="70" y1="122" x2="82" y2="164" stroke="#dc2626" strokeWidth="10" strokeLinecap="round" />
+                <line x1="48" y1="30" x2="56" y2="26" stroke="#0f172a" strokeWidth="3" strokeLinecap="round" />
+                <line x1="72" y1="26" x2="80" y2="30" stroke="#0f172a" strokeWidth="3" strokeLinecap="round" />
+                <circle cx="52" cy="34" r="3" fill="#0f172a" />
+                <circle cx="68" cy="34" r="3" fill="#0f172a" />
+                <path d="M48 49 Q60 40 72 49" fill="none" stroke="#0f172a" strokeWidth="3" strokeLinecap="round" />
+                <text x="60" y="188" textAnchor="middle" fontSize="20" fontWeight="700" fill="#b91c1c">IPv4</text>
+                <text x="60" y="212" textAnchor="middle" fontSize="15" fontWeight="700" fill="#7f1d1d">32-bit dwarf</text>
+              </g>
+
+              <line x1="420" y1="140" x2="240" y2="205" stroke="#475569" strokeWidth="5" strokeDasharray="8 8" />
+              <text x="308" y="134" textAnchor="middle" fontSize="18" fontWeight="700" fill="#334155">looks down on</text>
+            </svg>
+
+            <div className="grid grid-cols-2 gap-2 mt-2">
+              <div className="bg-red-50 border border-red-200 rounded p-2 text-center">
+                <div className="text-xl font-bold text-red-700">$2^{32}$</div>
+                <div className="text-[11px] text-red-900">~4.3 billion IPv4 addresses</div>
+              </div>
+              <div className="bg-green-50 border border-green-200 rounded p-2 text-center">
+                <div className="text-xl font-bold text-green-700">$2^{128}$</div>
+                <div className="text-[11px] text-green-900">340 undecillion IPv6 addresses</div>
+              </div>
+            </div>
           </div>
-          <div className="bg-green-50 p-3 rounded-lg border border-green-200">
-            <h4 className="text-sm font-bold text-green-800 mb-2">IPv6</h4>
-            <ul className="space-y-1 text-xs text-gray-700">
-              <li>• 128-bit addresses = 340 undecillion total</li>
-              <li>• Interface IDs always /64 — never count hosts</li>
-              <li>• No NAT needed — address space is infinite for all practical purposes</li>
-              <li>• Nibble boundaries simplify prefix hierarchy</li>
-              <li>• Design for subnets, not hosts</li>
-            </ul>
+
+          <div className="space-y-3">
+            <div className="bg-red-50 p-3 rounded-lg border border-red-200">
+              <h4 className="text-sm font-bold text-red-800 mb-2">IPv4</h4>
+              <ul className="space-y-1 text-xs text-gray-700">
+                <li>• 32-bit space, already exhausted</li>
+                <li>• NAT extends life but adds complexity</li>
+                <li>• Host counting per subnet matters</li>
+                <li>• Flexible prefixes, limited capacity</li>
+              </ul>
+            </div>
+            <div className="bg-green-50 p-3 rounded-lg border border-green-200">
+              <h4 className="text-sm font-bold text-green-800 mb-2">IPv6</h4>
+              <ul className="space-y-1 text-xs text-gray-700">
+                <li>• 128-bit space, effectively inexhaustible</li>
+                <li>• /64 at the edge, count subnets not hosts</li>
+                <li>• Nibble boundaries simplify hierarchy</li>
+                <li>• No NAT required for scale</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div className="bg-green-50 p-2 rounded text-xs text-green-800 border border-green-200">
