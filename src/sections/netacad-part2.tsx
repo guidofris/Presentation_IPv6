@@ -3,7 +3,7 @@ import { SlideType } from './types';
 export const netacadPart2Slides: SlideType[] = [
   {
     title: "Let\u2019s Deploy IPv6 NOW!",
-    subtitle: "Nicole Wajer \u2013 Technical Solutions Architect \u2013 Chief Stroopwafel Officer",
+    subtitle: "Guido Frissaer \u2013 Technical Solutions Architect \u2013 Chief Stroopwafel Officer",
     content: (
       <div className="flex flex-col space-y-4 max-w-5xl mx-auto px-4 md:px-0">
         <div className="bg-blue-50 p-5 rounded-lg border border-blue-200">
@@ -1068,7 +1068,7 @@ export const netacadPart2Slides: SlideType[] = [
         </div>
         <div className="bg-white p-5 rounded-lg shadow border border-blue-200">
           <ul className="space-y-2 text-gray-700">
-            <li>- Shameless self promotion of my own Quotes - Nicole Wajer</li>
+            <li>- Shameless self promotion of my own Quotes - Guido Frissaer</li>
           </ul>
         </div>
       </div>

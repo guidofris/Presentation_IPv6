@@ -3,16 +3,17 @@ import React, { useState } from 'react';
 import {
   Lock,
   AlertCircle,
-  Server,
   Network,
   Shield,
   Activity,
   Mail,
   CheckCircle,
-  Terminal,
-  HardDrive,
   Users,
-  Clock
+  Globe,
+  Router,
+  Compass,
+  Ruler,
+  Clock,
 } from 'lucide-react';
 import { verifyPassword } from '../utils/hash';
 
@@ -52,19 +53,19 @@ export const Login: React.FC<LoginProps> = ({ onSuccess, passwordHash }) => {
   };
 
   const topics = [
-    { icon: HardDrive, title: 'Installatie & Virtualisatie', desc: 'Werk met VMware en Red Hat Enterprise Linux', bgClass: 'bg-blue-500/20', iconClass: 'text-blue-400' },
-    { icon: Network, title: 'Netwerkdiensten', desc: 'Configureer DHCP en DNS in een enterprise context', bgClass: 'bg-indigo-500/20', iconClass: 'text-indigo-400' },
-    { icon: Server, title: 'Web & LAMP', desc: 'Bouw serverdiensten en complete webstacks', bgClass: 'bg-green-500/20', iconClass: 'text-green-400' },
-    { icon: Shield, title: 'Security', desc: 'Beveilig met SELinux en nftables', bgClass: 'bg-red-500/20', iconClass: 'text-red-400' },
-    { icon: Activity, title: 'Monitoring & Logging', desc: 'Analyseer processen, logs en storingen', bgClass: 'bg-orange-500/20', iconClass: 'text-orange-400' },
-    { icon: Terminal, title: 'Hands-on Labs', desc: 'Praktijkgerichte opdrachten met echte scenario\'s', bgClass: 'bg-purple-500/20', iconClass: 'text-purple-400' },
+    { icon: Globe, title: 'IPv6 Reality Check', desc: 'Busting myths — 51%+ of Internet traffic is already IPv6', bgClass: 'bg-blue-500/20', iconClass: 'text-blue-400' },
+    { icon: Ruler, title: 'IPv6 Address Design', desc: 'The 4 rules for planning a scalable IPv6 address hierarchy', bgClass: 'bg-green-500/20', iconClass: 'text-green-400' },
+    { icon: Router, title: 'IPv6 Operations', desc: 'Headers, NDP, DAD, PMTUD — how IPv6 actually works', bgClass: 'bg-purple-500/20', iconClass: 'text-purple-400' },
+    { icon: Network, title: 'NDP & Neighbor Discovery', desc: 'RS/RA, NS/NA and duplicate address detection in depth', bgClass: 'bg-indigo-500/20', iconClass: 'text-indigo-400' },
+    { icon: Shield, title: 'NAT64 & Transition', desc: 'IPv6-mostly, option 108, CLAT/PLAT and the IPv6-only journey', bgClass: 'bg-orange-500/20', iconClass: 'text-orange-400' },
+    { icon: Compass, title: 'Deploy IPv6 NOW!', desc: 'Practical guidance from IPv6 Forum Fellow Guido Frissaer', bgClass: 'bg-red-500/20', iconClass: 'text-red-400' },
   ];
 
   const benefits = [
-    'Praktijkgerichte opbouw van beginner naar enterprise Linux-beheer',
-    'Direct toepasbare skills voor systeem- en netwerkbeheer',
-    'Sterke focus op troubleshooting en operationele discipline',
-    'Evaluatie: 50% voortgang en 50% eindexamen',
+    'Based on real-world IPv6 deployments by Guido Frissaer (IPv6 Forum Fellow)',
+    'Covers both perception vs. reality and practical deployment guidance',
+    'Addresses IPv6-only, NAT64, SLAAC, NDP, and address planning',
+    'Applicable to enterprise networks, ISPs, hyperscalers, and cloud deployments',
   ];
 
   return (
@@ -75,20 +76,20 @@ export const Login: React.FC<LoginProps> = ({ onSuccess, passwordHash }) => {
         <div className="max-w-6xl mx-auto px-4 py-16 md:py-24 relative">
           <div className="text-center space-y-6">
             <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-2 text-blue-300 text-sm">
-              <Server className="w-4 h-4" />
-              <span>PXL-Digital</span>
+              <Globe className="w-4 h-4" />
+              <span>IPv6 Forum — Guido Frissaer</span>
             </div>
 
             <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
-              Linux<br />
+              IPv6<br />
               <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-green-400 bg-clip-text text-transparent">
-                Advanced
+                Today
               </span>
             </h1>
 
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Een praktijkgerichte cursus systeem- en netwerkbeheer met Red Hat Enterprise Linux,
-              van installatie en basisconfiguratie tot security, monitoring en troubleshooting.
+              Two sessions covering everything you need to deploy IPv6 — from debunking myths
+              to address planning, NDP operations, and the IPv6-only journey.
             </p>
 
             <div className="flex flex-wrap justify-center gap-4 pt-4">
@@ -96,37 +97,29 @@ export const Login: React.FC<LoginProps> = ({ onSuccess, passwordHash }) => {
                 onClick={() => setShowLogin(true)}
                 className="px-8 py-3 bg-white text-gray-900 font-semibold rounded-lg hover:bg-gray-100 transform hover:-translate-y-0.5 transition-all shadow-lg"
               >
-                Open cursusslides
+                Open slides
               </button>
-              <a
-                href="https://pxl-linux-advanced-sne.code-coaching.dev/cursus/overzicht.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transform hover:-translate-y-0.5 transition-all shadow-lg"
-              >
-                Open de cursustekst
-              </a>
               <button
                 onClick={() => setShowLecturerModal(true)}
                 className="px-8 py-3 bg-transparent border-2 border-white/30 text-white font-semibold rounded-lg hover:bg-white/10 transition-all flex items-center gap-2"
               >
                 <Mail className="w-5 h-5" />
-                Contacteer docent
+                Contact speaker
               </button>
             </div>
 
             <div className="flex flex-wrap justify-center gap-6 pt-6 text-gray-400 text-sm">
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4" />
-                <span>Week 1 start met Installatie</span>
+                <span>Session 1: Perception vs. Reality</span>
               </div>
               <div className="flex items-center gap-2">
                 <Users className="w-4 h-4" />
-                <span>Praktijkgericht onderwijs</span>
+                <span>IPv6 Forum presentation</span>
               </div>
               <div className="flex items-center gap-2">
-                <Terminal className="w-4 h-4" />
-                <span>Hands-on labs</span>
+                <Activity className="w-4 h-4" />
+                <span>Session 2: Let's Deploy IPv6 NOW!</span>
               </div>
             </div>
           </div>
@@ -136,7 +129,7 @@ export const Login: React.FC<LoginProps> = ({ onSuccess, passwordHash }) => {
       {/* Topics Grid */}
       <div className="max-w-6xl mx-auto px-4 py-16">
         <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-12">
-          Wat je leert
+          What you'll learn
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {topics.map((topic, index) => (
@@ -159,7 +152,7 @@ export const Login: React.FC<LoginProps> = ({ onSuccess, passwordHash }) => {
         <div className="bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-green-500/10 border border-white/10 rounded-2xl p-8 md:p-12">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">
-              Waarom deze cursus?
+              Why attend this session?
             </h2>
             <ul className="space-y-4 text-left inline-block">
               {benefits.map((benefit, index) => (
@@ -177,17 +170,17 @@ export const Login: React.FC<LoginProps> = ({ onSuccess, passwordHash }) => {
       <div className="max-w-6xl mx-auto px-4 py-16">
         <div className="text-center space-y-6">
           <h2 className="text-2xl md:text-3xl font-bold text-white">
-            Klaar om Linux Advanced te starten?
+            Ready to deploy IPv6?
           </h2>
           <p className="text-gray-400 max-w-xl mx-auto">
-            Contacteer ons voor vragen over het vak, de opdrachten of de evaluatie.
+            Questions about IPv6 deployment? Get in touch with the speaker.
           </p>
           <button
             onClick={() => setShowLecturerModal(true)}
             className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-purple-600 transform hover:-translate-y-0.5 transition-all shadow-lg"
           >
             <Mail className="w-5 h-5" />
-            Contacteer een docent
+            Contact the speaker
           </button>
         </div>
       </div>
@@ -195,12 +188,12 @@ export const Login: React.FC<LoginProps> = ({ onSuccess, passwordHash }) => {
       {/* Footer */}
       <div className="border-t border-white/10 py-8">
         <div className="max-w-6xl mx-auto px-4 text-center text-gray-500 text-sm">
-          © {new Date().getFullYear()} PXL. Al toegang?{' '}
+          © {new Date().getFullYear()} IPv6 Forum. Have the password?{' '}
           <button
             onClick={() => setShowLogin(true)}
             className="text-blue-400 hover:underline"
           >
-            Open met wachtwoord
+            Open with password
           </button>
         </div>
       </div>
@@ -215,7 +208,7 @@ export const Login: React.FC<LoginProps> = ({ onSuccess, passwordHash }) => {
               </div>
               <h2 className="text-xl font-bold text-gray-800">Kies een docent</h2>
               <p className="text-gray-500 text-sm mt-2">
-                Selecteer naar wie je een email wilt sturen
+                Select the speaker to send an email to
               </p>
             </div>
 
@@ -224,6 +217,7 @@ export const Login: React.FC<LoginProps> = ({ onSuccess, passwordHash }) => {
                 <a
                   key={index}
                   href={`mailto:${lecturer.email}?subject=Vraag%20Linux%20Advanced`}
+                                    href={`mailto:${lecturer.email}?subject=Question%20about%20IPv6%20presentation`}
                   onClick={() => setShowLecturerModal(false)}
                   className="block w-full p-4 border-2 border-gray-200 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition-all text-left"
                 >
@@ -237,7 +231,7 @@ export const Login: React.FC<LoginProps> = ({ onSuccess, passwordHash }) => {
               onClick={() => setShowLecturerModal(false)}
               className="w-full mt-4 py-2 px-4 bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold rounded-lg transition-all"
             >
-              Annuleren
+                Cancel
             </button>
           </div>
         </div>
@@ -257,11 +251,12 @@ export const Login: React.FC<LoginProps> = ({ onSuccess, passwordHash }) => {
               </div>
               <h2 className="text-xl font-bold text-gray-800">Voer het cursuswachtwoord in</h2>
               <p className="text-gray-500 text-sm mt-2">
-                Geen wachtwoord? Contacteer{' '}
+                No password? Contact{' '}
                 <a href="mailto:guido.frissaer@pxl.be" className="text-blue-600 hover:underline">
                   guido.frissaer@pxl.be
                 </a>
               </p>
+                              placeholder="Enter password"
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -284,7 +279,7 @@ export const Login: React.FC<LoginProps> = ({ onSuccess, passwordHash }) => {
                 {error && (
                   <div className="flex items-center gap-2 mt-2 text-red-500 text-sm">
                     <AlertCircle className="w-4 h-4" />
-                    <span>Onjuist wachtwoord. Probeer opnieuw.</span>
+                    <span>Incorrect password. Please try again.</span>
                   </div>
                 )}
               </div>
@@ -295,14 +290,14 @@ export const Login: React.FC<LoginProps> = ({ onSuccess, passwordHash }) => {
                   onClick={() => setShowLogin(false)}
                   className="flex-1 py-3 px-4 bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold rounded-lg transition-all"
                 >
-                  Annuleren
+                  Cancel
                 </button>
                 <button
                   type="submit"
                   disabled={isVerifying}
                   className="flex-1 py-3 px-4 bg-gray-800 hover:bg-gray-900 text-white font-semibold rounded-lg shadow-md transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  {isVerifying ? 'Controleren...' : 'Ontgrendelen'}
+                  {isVerifying ? 'Checking...' : 'Unlock'}
                 </button>
               </div>
             </form>

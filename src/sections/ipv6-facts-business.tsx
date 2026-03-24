@@ -13,7 +13,7 @@ export const ipv6FactsBusinessSlides: SlideType[] = [
         <p className="text-xl md:text-2xl text-gray-600 text-center max-w-2xl">
           Perception vs Reality: Separating Fact from Fiction
         </p>
-        <p className="text-sm text-gray-500 text-center">Nicole Wajer – Technical Solutions Architect – Chief Stroopwafel Officer</p>
+        <p className="text-sm text-gray-500 text-center">Guido Frissaer – Technical Solutions Architect – Chief Stroopwafel Officer</p>
         <div className="flex space-x-2 mt-4">
           <div className="w-3 h-3 bg-blue-300 rounded-full"></div>
           <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
@@ -33,7 +33,7 @@ export const ipv6FactsBusinessSlides: SlideType[] = [
           <p className="text-base text-blue-900 italic font-semibold text-center">
             "IPv6 is Internet broccoli. Good for us in the long run but no immediate sugar rush from deploying it now"
           </p>
-          <p className="text-xs text-gray-500 text-center mt-1">— Nicole Wajer</p>
+          <p className="text-xs text-gray-500 text-center mt-1">— Guido Frissaer</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           <div className="bg-white p-3 rounded-lg shadow border border-blue-200">
@@ -415,7 +415,7 @@ export const ipv6FactsBusinessSlides: SlideType[] = [
           </ul>
         </div>
         <p className="text-xs text-gray-500 italic text-center max-w-xl">
-          "IPv6 is Internet broccoli. Good for us in the long run but no immediate sugar rush from deploying it now" — Nicole Wajer
+          "IPv6 is Internet broccoli. Good for us in the long run but no immediate sugar rush from deploying it now" — Guido Frissaer
         </p>
       </div>
     ),

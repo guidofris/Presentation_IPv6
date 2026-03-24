@@ -11,10 +11,10 @@ import './index.css';
 //   crypto.subtle.digest('SHA-256', new TextEncoder().encode('your-password'))
 //     .then(buf => Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join(''))
 //     .then(console.log)
-// Local dev hash is for 'LinuxIsCool', production uses VITE_WORKSHOP_PASSWORD_HASH env var
+// Local dev hash is for 'IPv6IsCool', production uses VITE_WORKSHOP_PASSWORD_HASH env var
 // This is not actual security, just a simple gate to prevent casual access
 const WORKSHOP_PASSWORD_HASH = import.meta.env.VITE_WORKSHOP_PASSWORD_HASH ||
-  '7df87d57d3055f9bb8ef467e9bfa059f1f51f1ad513439c5c543f51c005ea461'; // hash of 'LinuxIsCool'
+  'de3e33e11dec05da57f518cfea7af1e1a2d20dbd1e77b7489241f66281f70a58'; // hash of 'IPv6IsCool'
 
 // Section definitions with metadata
 const sections = [

@@ -357,7 +357,7 @@ export const ipv6TransitionJourneySlides: SlideType[] = [
           <p className="text-xl md:text-2xl italic font-semibold text-green-900 leading-relaxed">
             "IPv6 is Internet broccoli. Good for us in the long run but no immediate sugar rush from deploying it now."
           </p>
-          <p className="text-sm text-gray-500 mt-4">— Nicole Wajer</p>
+          <p className="text-sm text-gray-500 mt-4">— Guido Frissaer</p>
         </div>
         <p className="text-xs text-gray-400">…but deploy it anyway. Your future self will thank you.</p>
       </div>
@@ -373,7 +373,7 @@ export const ipv6TransitionJourneySlides: SlideType[] = [
         <Compass className="w-16 h-16 text-orange-500" />
         <h1 className="text-5xl font-bold text-orange-900">Thank You</h1>
         <div className="flex flex-col items-center gap-2 text-gray-600">
-          <p className="text-lg">Nicole Wajer — IPv6 Forum Fellow</p>
+          <p className="text-lg">Guido Frissaer — IPv6 Forum Fellow</p>
           <p className="text-sm text-gray-400">Let's Deploy IPv6 NOW!</p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-4">

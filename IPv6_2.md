@@ -1,6 +1,6 @@
 <!-- Slide number: 1 -->
 # Let’s Deploy IPv6 NOW!
-Nicole Wajer – Technical Solutions Architect – Chief Stroopwafel Officer
+Guido Frissaer – Technical Solutions Architect – Chief Stroopwafel Officer
 March 13th, 2026
 
 ### Notes:
@@ -847,7 +847,7 @@ IPv4
 
 <!-- Slide number: 54 -->
 # "IPv6 is Internet broccoli. Good for us in the long run but no immediate sugar rush from deploying it now"
-Shameless self promotion of my own Quotes - Nicole Wajer
+Shameless self promotion of my own Quotes - Guido Frissaer
 
 ![](Picture5.jpg)
 

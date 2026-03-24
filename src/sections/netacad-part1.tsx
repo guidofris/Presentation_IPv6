@@ -12,7 +12,7 @@ export const netacadPart1Slides: SlideType[] = [
         </div>
         <div className="bg-white p-5 rounded-lg shadow border border-blue-200">
           <ul className="space-y-2 text-gray-700">
-            <li>- Nicole Wajer – Technical Solutions Architect – Chief Stroopwafel Officer</li>
+            <li>- Guido Frissaer – Technical Solutions Architect – Chief Stroopwafel Officer</li>
             <li>- March 13</li>
             <li>- th</li>
             <li>- , 2026</li>
@@ -763,7 +763,7 @@ export const netacadPart1Slides: SlideType[] = [
         </div>
         <div className="bg-white p-5 rounded-lg shadow border border-blue-200">
           <ul className="space-y-2 text-gray-700">
-            <li>- Shameless self promotion of my own Quotes - Nicole Wajer</li>
+            <li>- Shameless self promotion of my own Quotes - Guido Frissaer</li>
             <li>- CISCOU-1038</li>
           </ul>
         </div>

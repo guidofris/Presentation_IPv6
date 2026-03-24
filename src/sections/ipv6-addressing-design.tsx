@@ -267,6 +267,70 @@ export const ipv6AddressingDesignSlides: SlideType[] = [
     ),
   },
 
+  // ─── Nibble Boundaries Visual ─────────────────────────────────────────────
+  {
+    title: 'Nibble Boundaries Visualized',
+    subtitle: 'A clear, layered view of hierarchical allocation from /29 to /52',
+    content: (
+      <div className="flex flex-col space-y-2 max-w-3xl mx-auto">
+        <div className="bg-green-50 p-2 rounded text-xs text-green-800 border border-green-200">
+          Keep each boundary on a nibble (4-bit) step for clean aggregation and simpler troubleshooting.
+        </div>
+
+        <div className="relative w-full h-56 bg-gray-200 rounded-full overflow-hidden border border-gray-300">
+          <div className="absolute inset-2 bg-cyan-500 rounded-full shadow-sm">
+            <div className="absolute top-2 left-1/2 -translate-x-1/2 text-xs md:text-sm font-bold text-gray-800 text-center leading-tight">
+              /29 Global Level
+              <br />
+              (50% spares)
+            </div>
+            <div className="absolute right-8 top-1/2 -translate-y-1/2 text-white text-xl md:text-3xl font-bold text-center leading-tight">
+              /32
+              <br />
+              <span className="text-base md:text-xl">per Region</span>
+            </div>
+          </div>
+
+          <div className="absolute inset-x-6 inset-y-8 bg-blue-600 rounded-full shadow-sm">
+            <div className="absolute right-52 top-1/2 -translate-y-1/2 text-gray-900 text-xl md:text-3xl font-bold text-center leading-tight">
+              /36
+              <br />
+              <span className="text-base md:text-xl">per Sub-Region</span>
+            </div>
+          </div>
+
+          <div className="absolute inset-x-12 inset-y-14 bg-green-600 rounded-full shadow-sm"></div>
+
+          <div className="absolute left-16 right-32 top-20 bottom-16 bg-amber-100 rounded-full border border-amber-300 shadow-sm">
+            <div className="absolute right-8 top-1/2 -translate-y-1/2 text-gray-700 text-lg md:text-2xl font-bold text-center leading-tight">
+              /40 per Campus
+              <br />
+              <span className="text-sm md:text-lg">(256 Buildings)</span>
+            </div>
+          </div>
+
+          <div className="absolute left-24 right-80 top-24 bottom-20 bg-amber-400 rounded-full border border-amber-500 shadow-sm">
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-gray-900 text-lg md:text-2xl font-bold text-center leading-tight">
+              /48 per Building/Branch
+              <br />
+              <span className="text-sm md:text-lg">(16 PINs per Building/Branch)</span>
+            </div>
+          </div>
+
+          <div className="absolute left-8 top-1/2 -translate-y-1/2 w-52 h-28 bg-white rounded-full border border-gray-300 shadow-md flex items-center justify-center px-2">
+            <p className="text-gray-900 text-sm md:text-xl font-bold text-center leading-tight">
+              /52 per PIN *
+              <br />
+              <span className="text-xs md:text-base">(4096 Subnets / PIN)</span>
+            </p>
+          </div>
+        </div>
+
+        <p className="text-xs text-gray-500">* PIN = Place In the Network</p>
+      </div>
+    ),
+  },
+
   // ─── Address Planning Continued ────────────────────────────────────────────
   {
     title: 'Address Planning: Encoding Scheme Examples',

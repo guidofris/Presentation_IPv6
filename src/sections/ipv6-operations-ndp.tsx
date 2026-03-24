@@ -13,7 +13,7 @@ export const ipv6OperationsNdpSlides: SlideType[] = [
         <p className="text-xl md:text-2xl text-gray-600 text-center max-w-2xl">
           Let's Deploy IPv6 NOW! — Headers, Addressing, NDP, and PMTUD in practice.
         </p>
-        <p className="text-sm text-gray-500 text-center">Nicole Wajer – Technical Solutions Architect – Chief Stroopwafel Officer</p>
+        <p className="text-sm text-gray-500 text-center">Guido Frissaer – Technical Solutions Architect – Chief Stroopwafel Officer</p>
         <div className="flex space-x-2 mt-4">
           <div className="w-3 h-3 bg-purple-300 rounded-full"></div>
           <div className="w-3 h-3 bg-purple-500 rounded-full"></div>
