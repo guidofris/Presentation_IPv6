@@ -272,42 +272,46 @@ export const ipv6AddressingDesignSlides: SlideType[] = [
     title: 'Nibble Boundaries Visualized',
     subtitle: 'A clear, layered view of hierarchical allocation from /29 to /52',
     content: (
-      <div className="flex flex-col space-y-2 max-w-3xl mx-auto">
-        <div className="bg-green-50 p-2 rounded text-xs text-green-800 border border-green-200">
-          Keep each boundary on a nibble (4-bit) step for clean aggregation and simpler troubleshooting.
-        </div>
+      <div className="flex flex-col items-center justify-center h-full space-y-2 max-w-5xl mx-auto">
+        <svg viewBox="0 0 2048 768" className="w-full h-auto" role="img" aria-label="Nibble boundaries hierarchy from /29 to /52">
+          <defs>
+            <filter id="softShadow" x="-10%" y="-10%" width="120%" height="140%">
+              <feDropShadow dx="0" dy="12" stdDeviation="10" floodColor="#000000" floodOpacity="0.18" />
+            </filter>
+          </defs>
 
-        <div className="bg-gray-200 rounded-2xl p-2 border border-gray-300 shadow-sm">
-          <svg viewBox="0 0 1200 420" className="w-full h-56 md:h-60" role="img" aria-label="Nibble boundaries hierarchy from /29 to /52">
-            <ellipse cx="600" cy="210" rx="575" ry="185" fill="#1cb5e0" />
-            <ellipse cx="600" cy="210" rx="552" ry="148" fill="#1f66e5" />
-            <ellipse cx="555" cy="210" rx="465" ry="126" fill="#3f9d20" />
-            <ellipse cx="440" cy="210" rx="360" ry="96" fill="#e8d6bb" stroke="#f59e0b" strokeWidth="1.5" />
-            <ellipse cx="335" cy="210" rx="260" ry="70" fill="#f9bf00" stroke="#f59e0b" strokeWidth="2" />
-            <ellipse cx="190" cy="210" rx="110" ry="46" fill="#f7f7f7" stroke="#b9b9b9" strokeWidth="2" />
+          <rect x="0" y="0" width="2048" height="768" fill="#ffffff" />
 
-            <text x="600" y="68" textAnchor="middle" fontSize="20" fontWeight="700" fill="#1f2937">/29 Global Level</text>
-            <text x="600" y="93" textAnchor="middle" fontSize="20" fontWeight="700" fill="#1f2937">(50% spares)</text>
+          <g filter="url(#softShadow)">
+            <ellipse cx="1024" cy="392" rx="980" ry="350" fill="#1eb4e0" />
+            <ellipse cx="1018" cy="392" rx="930" ry="238" fill="#1f63eb" />
+            <ellipse cx="930" cy="392" rx="760" ry="206" fill="#3ea11d" />
+            <ellipse cx="760" cy="392" rx="610" ry="168" fill="#f7e2c2" stroke="#f09a00" strokeWidth="4" />
+            <ellipse cx="565" cy="392" rx="445" ry="124" fill="#f9bd04" stroke="#ef9a00" strokeWidth="4" />
+            <ellipse cx="338" cy="392" rx="195" ry="78" fill="#fbfbfb" stroke="#d7d7d7" strokeWidth="4" />
+          </g>
 
-            <text x="1082" y="204" textAnchor="middle" fontSize="42" fontWeight="700" fill="#ffffff">/32</text>
-            <text x="1082" y="235" textAnchor="middle" fontSize="23" fontWeight="700" fill="#ffffff">per Region</text>
+          <text x="1024" y="94" textAnchor="middle" fontSize="50" fontWeight="700" fill="#253447">/29 Global Level</text>
+          <text x="1024" y="146" textAnchor="middle" fontSize="50" fontWeight="700" fill="#253447">(50% spares)</text>
 
-            <text x="850" y="205" textAnchor="middle" fontSize="42" fontWeight="700" fill="#1f2937">/36</text>
-            <text x="850" y="236" textAnchor="middle" fontSize="23" fontWeight="700" fill="#1f2937">per Sub-Region</text>
+          <text x="1845" y="386" textAnchor="middle" fontSize="64" fontWeight="700" fill="#ffffff">/32</text>
+          <text x="1845" y="448" textAnchor="middle" fontSize="40" fontWeight="700" fill="#ffffff">per Region</text>
 
-            <text x="650" y="202" textAnchor="middle" fontSize="24" fontWeight="700" fill="#3f3f46">/40 per Campus</text>
-            <text x="650" y="228" textAnchor="middle" fontSize="19" fontWeight="700" fill="#3f3f46">(256 Buildings)</text>
+          <text x="1495" y="378" textAnchor="middle" fontSize="66" fontWeight="700" fill="#2f3844">/36</text>
+          <text x="1495" y="440" textAnchor="middle" fontSize="40" fontWeight="700" fill="#2f3844">per Sub-Region</text>
 
-            <text x="410" y="192" textAnchor="middle" fontSize="22" fontWeight="700" fill="#111827">/48 per Building/Branch</text>
-            <text x="410" y="217" textAnchor="middle" fontSize="18" fontWeight="700" fill="#111827">(16 PINs per</text>
-            <text x="410" y="239" textAnchor="middle" fontSize="18" fontWeight="700" fill="#111827">Building/Branch)</text>
+          <text x="1120" y="380" textAnchor="middle" fontSize="44" fontWeight="700" fill="#444444">/40 per Campus</text>
+          <text x="1120" y="432" textAnchor="middle" fontSize="38" fontWeight="700" fill="#444444">(256 Buildings)</text>
 
-            <text x="190" y="200" textAnchor="middle" fontSize="20" fontWeight="700" fill="#0f172a">/52 per PIN *</text>
-            <text x="190" y="224" textAnchor="middle" fontSize="15" fontWeight="700" fill="#0f172a">(4096 Subnets / PIN)</text>
-          </svg>
-        </div>
+          <text x="760" y="370" textAnchor="middle" fontSize="44" fontWeight="700" fill="#0f2238">/48 per Building/Branch</text>
+          <text x="760" y="425" textAnchor="middle" fontSize="38" fontWeight="700" fill="#0f2238">(16 PINs per</text>
+          <text x="760" y="474" textAnchor="middle" fontSize="38" fontWeight="700" fill="#0f2238">Building/Branch)</text>
 
-        <p className="text-xs text-gray-500">* PIN = Place In the Network</p>
+          <text x="338" y="368" textAnchor="middle" fontSize="42" fontWeight="700" fill="#11233b">/52 per PIN *</text>
+          <text x="338" y="421" textAnchor="middle" fontSize="34" fontWeight="700" fill="#11233b">(4096 Subnets / PIN)</text>
+        </svg>
+
+        <p className="text-xs text-gray-500">* PIN = Place In the Network. Nibble-aligned prefixes keep the hierarchy readable.</p>
       </div>
     ),
   },

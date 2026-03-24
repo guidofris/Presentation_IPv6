@@ -58,11 +58,11 @@ export const Login: React.FC<LoginProps> = ({ onSuccess, passwordHash }) => {
     { icon: Router, title: 'IPv6 Operations', desc: 'Headers, NDP, DAD, PMTUD — how IPv6 actually works', bgClass: 'bg-purple-500/20', iconClass: 'text-purple-400' },
     { icon: Network, title: 'NDP & Neighbor Discovery', desc: 'RS/RA, NS/NA and duplicate address detection in depth', bgClass: 'bg-indigo-500/20', iconClass: 'text-indigo-400' },
     { icon: Shield, title: 'NAT64 & Transition', desc: 'IPv6-mostly, option 108, CLAT/PLAT and the IPv6-only journey', bgClass: 'bg-orange-500/20', iconClass: 'text-orange-400' },
-    { icon: Compass, title: 'Deploy IPv6 NOW!', desc: 'Practical guidance from IPv6 Forum Fellow Guido Frissaer', bgClass: 'bg-red-500/20', iconClass: 'text-red-400' },
+    { icon: Compass, title: 'Deploy IPv6 NOW!', desc: 'Practical guidance from Guido Frissaer', bgClass: 'bg-red-500/20', iconClass: 'text-red-400' },
   ];
 
   const benefits = [
-    'Based on real-world IPv6 deployments by Guido Frissaer (IPv6 Forum Fellow)',
+    'Based on real-world IPv6 deployments by Guido Frissaer',
     'Covers both perception vs. reality and practical deployment guidance',
     'Addresses IPv6-only, NAT64, SLAAC, NDP, and address planning',
     'Applicable to enterprise networks, ISPs, hyperscalers, and cloud deployments',
@@ -77,7 +77,7 @@ export const Login: React.FC<LoginProps> = ({ onSuccess, passwordHash }) => {
           <div className="text-center space-y-6">
             <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-2 text-blue-300 text-sm">
               <Globe className="w-4 h-4" />
-              <span>IPv6 Forum — Guido Frissaer</span>
+              <span>Guido Frissaer</span>
             </div>
 
             <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
@@ -115,7 +115,7 @@ export const Login: React.FC<LoginProps> = ({ onSuccess, passwordHash }) => {
               </div>
               <div className="flex items-center gap-2">
                 <Users className="w-4 h-4" />
-                <span>IPv6 Forum presentation</span>
+                <span>IPv6 presentation</span>
               </div>
               <div className="flex items-center gap-2">
                 <Activity className="w-4 h-4" />
@@ -188,7 +188,7 @@ export const Login: React.FC<LoginProps> = ({ onSuccess, passwordHash }) => {
       {/* Footer */}
       <div className="border-t border-white/10 py-8">
         <div className="max-w-6xl mx-auto px-4 text-center text-gray-500 text-sm">
-          © {new Date().getFullYear()} IPv6 Forum. Have the password?{' '}
+          © {new Date().getFullYear()} Have the password?{' '}
           <button
             onClick={() => setShowLogin(true)}
             className="text-blue-400 hover:underline"
