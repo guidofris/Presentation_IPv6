@@ -291,24 +291,24 @@ export const ipv6AddressingDesignSlides: SlideType[] = [
             <ellipse cx="338" cy="392" rx="195" ry="78" fill="#fbfbfb" stroke="#d7d7d7" strokeWidth="4" />
           </g>
 
-          <text x="1024" y="94" textAnchor="middle" fontSize="50" fontWeight="700" fill="#253447">/29 Global Level</text>
-          <text x="1024" y="146" textAnchor="middle" fontSize="50" fontWeight="700" fill="#253447">(50% spares)</text>
+          <text x="1024" y="96" textAnchor="middle" fontSize="42" fontWeight="700" fill="#253447">/29 Global Level</text>
+          <text x="1024" y="140" textAnchor="middle" fontSize="42" fontWeight="700" fill="#253447">(50% spares)</text>
 
-          <text x="1845" y="386" textAnchor="middle" fontSize="64" fontWeight="700" fill="#ffffff">/32</text>
-          <text x="1845" y="448" textAnchor="middle" fontSize="40" fontWeight="700" fill="#ffffff">per Region</text>
+          <text x="1840" y="380" textAnchor="middle" fontSize="52" fontWeight="700" fill="#ffffff">/32</text>
+          <text x="1840" y="426" textAnchor="middle" fontSize="30" fontWeight="700" fill="#ffffff">per Region</text>
 
-          <text x="1495" y="378" textAnchor="middle" fontSize="66" fontWeight="700" fill="#2f3844">/36</text>
-          <text x="1495" y="440" textAnchor="middle" fontSize="40" fontWeight="700" fill="#2f3844">per Sub-Region</text>
+          <text x="1490" y="374" textAnchor="middle" fontSize="52" fontWeight="700" fill="#2f3844">/36</text>
+          <text x="1490" y="420" textAnchor="middle" fontSize="30" fontWeight="700" fill="#2f3844">per Sub-Region</text>
 
-          <text x="1120" y="380" textAnchor="middle" fontSize="44" fontWeight="700" fill="#444444">/40 per Campus</text>
-          <text x="1120" y="432" textAnchor="middle" fontSize="38" fontWeight="700" fill="#444444">(256 Buildings)</text>
+          <text x="1090" y="374" textAnchor="middle" fontSize="34" fontWeight="700" fill="#444444">/40 per Campus</text>
+          <text x="1090" y="414" textAnchor="middle" fontSize="28" fontWeight="700" fill="#444444">(256 Buildings)</text>
 
-          <text x="760" y="370" textAnchor="middle" fontSize="44" fontWeight="700" fill="#0f2238">/48 per Building/Branch</text>
-          <text x="760" y="425" textAnchor="middle" fontSize="38" fontWeight="700" fill="#0f2238">(16 PINs per</text>
-          <text x="760" y="474" textAnchor="middle" fontSize="38" fontWeight="700" fill="#0f2238">Building/Branch)</text>
+          <text x="735" y="360" textAnchor="middle" fontSize="34" fontWeight="700" fill="#0f2238">/48 per Building/Branch</text>
+          <text x="735" y="400" textAnchor="middle" fontSize="26" fontWeight="700" fill="#0f2238">(16 PINs per</text>
+          <text x="735" y="434" textAnchor="middle" fontSize="26" fontWeight="700" fill="#0f2238">Building/Branch)</text>
 
-          <text x="338" y="368" textAnchor="middle" fontSize="42" fontWeight="700" fill="#11233b">/52 per PIN *</text>
-          <text x="338" y="421" textAnchor="middle" fontSize="34" fontWeight="700" fill="#11233b">(4096 Subnets / PIN)</text>
+          <text x="338" y="374" textAnchor="middle" fontSize="32" fontWeight="700" fill="#11233b">/52 per PIN *</text>
+          <text x="338" y="410" textAnchor="middle" fontSize="24" fontWeight="700" fill="#11233b">(4096 Subnets / PIN)</text>
         </svg>
 
         <p className="text-xs text-gray-500">* PIN = Place In the Network. Nibble-aligned prefixes keep the hierarchy readable.</p>
