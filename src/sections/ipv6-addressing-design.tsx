@@ -58,11 +58,11 @@ export const ipv6AddressingDesignSlides: SlideType[] = [
     content: (
       <div className="flex flex-col space-y-2 max-w-4xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-[1.2fr_0.8fr] gap-3 items-start">
-          <div className="bg-gradient-to-br from-slate-50 via-sky-50 to-rose-50 p-3 rounded-lg border border-slate-200 shadow-sm overflow-hidden">
+          <div className="bg-gradient-to-br from-slate-50 via-sky-50 to-rose-50 p-3 rounded-lg border border-slate-200 shadow-sm">
             <img
               src={`${import.meta.env.BASE_URL}IPv6-vs-IPv4.png`}
               alt="A giant IPv6 character looking down at an angry IPv4 dwarf to compare address space size"
-              className="w-full h-44 md:h-52 object-cover object-center rounded-md"
+              className="w-full h-64 md:h-80 object-contain rounded-md"
             />
           </div>
 
