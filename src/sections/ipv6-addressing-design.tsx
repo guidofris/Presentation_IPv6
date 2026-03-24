@@ -278,7 +278,7 @@ export const ipv6AddressingDesignSlides: SlideType[] = [
         </div>
 
         <div className="bg-gray-200 rounded-2xl p-2 border border-gray-300 shadow-sm">
-          <svg viewBox="0 0 1200 420" className="w-full h-52" role="img" aria-label="Nibble boundaries hierarchy from /29 to /52">
+          <svg viewBox="0 0 1200 420" className="w-full h-56 md:h-60" role="img" aria-label="Nibble boundaries hierarchy from /29 to /52">
             <ellipse cx="600" cy="210" rx="575" ry="185" fill="#1cb5e0" />
             <ellipse cx="600" cy="210" rx="552" ry="148" fill="#1f66e5" />
             <ellipse cx="555" cy="210" rx="465" ry="126" fill="#3f9d20" />
@@ -286,24 +286,24 @@ export const ipv6AddressingDesignSlides: SlideType[] = [
             <ellipse cx="335" cy="210" rx="260" ry="70" fill="#f9bf00" stroke="#f59e0b" strokeWidth="2" />
             <ellipse cx="190" cy="210" rx="110" ry="46" fill="#f7f7f7" stroke="#b9b9b9" strokeWidth="2" />
 
-            <text x="600" y="72" textAnchor="middle" fontSize="24" fontWeight="700" fill="#1f2937">/29 Global Level</text>
-            <text x="600" y="101" textAnchor="middle" fontSize="24" fontWeight="700" fill="#1f2937">(50% spares)</text>
+            <text x="600" y="68" textAnchor="middle" fontSize="20" fontWeight="700" fill="#1f2937">/29 Global Level</text>
+            <text x="600" y="93" textAnchor="middle" fontSize="20" fontWeight="700" fill="#1f2937">(50% spares)</text>
 
-            <text x="1080" y="205" textAnchor="middle" fontSize="52" fontWeight="700" fill="#ffffff">/32</text>
-            <text x="1080" y="242" textAnchor="middle" fontSize="28" fontWeight="700" fill="#ffffff">per Region</text>
+            <text x="1082" y="204" textAnchor="middle" fontSize="42" fontWeight="700" fill="#ffffff">/32</text>
+            <text x="1082" y="235" textAnchor="middle" fontSize="23" fontWeight="700" fill="#ffffff">per Region</text>
 
-            <text x="840" y="205" textAnchor="middle" fontSize="52" fontWeight="700" fill="#1f2937">/36</text>
-            <text x="840" y="242" textAnchor="middle" fontSize="28" fontWeight="700" fill="#1f2937">per Sub-Region</text>
+            <text x="850" y="205" textAnchor="middle" fontSize="42" fontWeight="700" fill="#1f2937">/36</text>
+            <text x="850" y="236" textAnchor="middle" fontSize="23" fontWeight="700" fill="#1f2937">per Sub-Region</text>
 
-            <text x="700" y="202" textAnchor="middle" fontSize="28" fontWeight="700" fill="#3f3f46">/40 per Campus</text>
-            <text x="700" y="232" textAnchor="middle" fontSize="22" fontWeight="700" fill="#3f3f46">(256 Buildings)</text>
+            <text x="650" y="202" textAnchor="middle" fontSize="24" fontWeight="700" fill="#3f3f46">/40 per Campus</text>
+            <text x="650" y="228" textAnchor="middle" fontSize="19" fontWeight="700" fill="#3f3f46">(256 Buildings)</text>
 
-            <text x="438" y="196" textAnchor="middle" fontSize="28" fontWeight="700" fill="#111827">/48 per Building/Branch</text>
-            <text x="438" y="226" textAnchor="middle" fontSize="22" fontWeight="700" fill="#111827">(16 PINs per</text>
-            <text x="438" y="253" textAnchor="middle" fontSize="22" fontWeight="700" fill="#111827">Building/Branch)</text>
+            <text x="410" y="192" textAnchor="middle" fontSize="22" fontWeight="700" fill="#111827">/48 per Building/Branch</text>
+            <text x="410" y="217" textAnchor="middle" fontSize="18" fontWeight="700" fill="#111827">(16 PINs per</text>
+            <text x="410" y="239" textAnchor="middle" fontSize="18" fontWeight="700" fill="#111827">Building/Branch)</text>
 
-            <text x="190" y="198" textAnchor="middle" fontSize="24" fontWeight="700" fill="#0f172a">/52 per PIN *</text>
-            <text x="190" y="227" textAnchor="middle" fontSize="19" fontWeight="700" fill="#0f172a">(4096 Subnets / PIN)</text>
+            <text x="190" y="200" textAnchor="middle" fontSize="20" fontWeight="700" fill="#0f172a">/52 per PIN *</text>
+            <text x="190" y="224" textAnchor="middle" fontSize="15" fontWeight="700" fill="#0f172a">(4096 Subnets / PIN)</text>
           </svg>
         </div>
 
