@@ -216,8 +216,7 @@ export const Login: React.FC<LoginProps> = ({ onSuccess, passwordHash }) => {
               {lecturers.map((lecturer, index) => (
                 <a
                   key={index}
-                  href={`mailto:${lecturer.email}?subject=Vraag%20Linux%20Advanced`}
-                                    href={`mailto:${lecturer.email}?subject=Question%20about%20IPv6%20presentation`}
+                  href={`mailto:${lecturer.email}?subject=Question%20about%20IPv6%20presentation`}
                   onClick={() => setShowLecturerModal(false)}
                   className="block w-full p-4 border-2 border-gray-200 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition-all text-left"
                 >
